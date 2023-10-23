@@ -26,7 +26,7 @@ pipeline {
                 ok "Si"
             }
             steps{
-                bat 'terraform destroy'
+                bat 'terraform destroy -auto-approve'
             }
         }
     }
